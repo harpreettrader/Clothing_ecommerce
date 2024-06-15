@@ -1,9 +1,12 @@
 {
+  "homepage": "https://harpreettrader.github.io/C_ecommerce",
   "name": "my-ecommerce-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "concurrently \"npm run dev\" \"npm run json\"",
     "dev": "vite",
     "build": "vite build",
